@@ -1,0 +1,157 @@
+<html>
+<head>
+    <title>Foodie Express</title>
+
+    
+    <link rel="stylesheet" href="food.css">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+</head>
+<body>
+
+    
+    <header>
+        <div class="logo">Melody Express</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="cart-box">
+             Cart: <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Delicious Food Delivered Fast</h1>
+            <p>Order your favorite meals anytime and anywhere.</p>
+            <button onclick="scrollToMenu()">Order Now</button>
+        </div>
+    </section>
+
+    
+    <section class="search-section">
+        <input type="text" id="searchInput" placeholder="Search food..." 
+    </section>
+
+    
+    <section class="menu-section" id="menu">
+
+        <h2>Popular Foods</h2>
+
+        <div class="food-container">
+
+            
+            <div class="food-card">
+                <img src="boba.jpg" alt="sweet drink">
+
+                <h3>boba</h3>
+
+                <p class="price">Rp45.000</p>
+
+                <button onclick="addToCart('boba')">
+                    Add to Cart
+                </button>
+            </div>
+
+            
+            <div class="food-card">
+                <img src="cookies.jpg"alt="sweet tooth">
+
+                <h3>cookies</h3>
+
+                <p class="price">Rp75.000</p>
+
+                <button onclick="addToCart('cookies')">
+                    Add to Cart
+                </button>
+            </div>
+
+            
+            <div class="food-card">
+                <img src="brocoli.jpg" alt="healthy sweet">
+
+                <h3>rice set</h3>
+
+                <p class="price">Rp55.000</p>
+ <button onclick="addToCart('set')">
+                    Add to Cart
+                </button>
+               
+            </div>
+			
+<div class="food-card">
+                <img src="jelly.jpg" alt="sweet jello">
+
+                <h3>jelly</h3>
+
+                <p class="price">Rp54.000</p>
+
+                <button onclick="addToCart('jelly')">
+                    Add to Cart
+                </button>
+            </div>
+           
+            <div class="food-card">
+                <img src="myrice.jpg" alt="sweet treat">
+
+                <h3>sweet treat</h3>
+
+                <p class="price">Rp40.000</p>
+
+                <button onclick="addToCart('Healthy Salad')">
+                    Add to Cart
+                </button>
+            </div>
+						
+       <div class="food-card">
+                <img src="smoothie.jpg" alt="drink">
+
+                <h3>healthy smoothie</h3>
+
+                <p class="price">Rp34.000</p>
+
+                <button onclick="addToCart('smoothie')">
+                    Add to Cart
+                </button>
+            </div>
+			</div>
+    </section>
+
+    
+    <section class="about" id="about">
+        <h2>About Us</h2>
+
+        <p>
+            my melody express is a fast delivery service that dedicates itself to my melody themed foods.
+        </p>
+    </section>
+
+    
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: mymelody@gmail.com</p>
+
+        <p>Phone: +62 811 6191 178</p>
+
+    </section>
+  
+    <footer>
+        <p> 2026 My melody express <p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
